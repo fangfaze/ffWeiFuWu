@@ -1,12 +1,12 @@
 group 'com.fangfaze.java.ffweifuwu.ffEurekaServer'
 version '1.0-SNAPSHOT'
 
-buildscript{
+buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.1.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.12.RELEASE")
     }
 
 }
@@ -22,6 +22,6 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.1.RELEASE'
-    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '1.5.12.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka-server', version: '1.4.4.RELEASE'
 }
