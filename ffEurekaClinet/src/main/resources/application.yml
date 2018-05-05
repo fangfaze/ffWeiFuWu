@@ -1,3 +1,10 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: SERVICE-HELLO
+
 eureka:
   enabled: true
 #  instance:

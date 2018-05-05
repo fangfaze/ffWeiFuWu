@@ -2,6 +2,9 @@ server:
   port: 9999
 
 eureka:
+  server:
+        enableSelfPreservation: false
+        evictionIntervalTimerInMs: 10000
   instance:
     hostname: localhost
   client:

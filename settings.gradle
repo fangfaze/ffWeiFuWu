@@ -1,2 +1,2 @@
 rootProject.name = 'ffWeiFuWu'
-include 'ffEurekaServer', 'ffEurekaClinet', 'ffZuul'
+include 'ffEurekaServer', 'ffEurekaClinet', 'ffRibbon'

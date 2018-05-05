@@ -1,0 +1,16 @@
+group 'com.fangfaze.java.ffweifuwu.ffRibbon'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.12.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-ribbon', version: '1.4.4.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: '1.4.4.RELEASE'
+}
