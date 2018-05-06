@@ -1,9 +1,13 @@
 server:
-  port: 8088
+  port: 8089
 
 spring:
   application:
-    name: server-ribbon
+    name: server-feign
+
+feign:
+  hystrix:
+    enabled: true
 
 eureka:
   client:

@@ -1,4 +1,4 @@
-group 'com.fangfaze.java.ffweifuwu.ffRibbon'
+group 'com.fangfaze.java.ffweifuwu.ffZuul'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -11,7 +11,7 @@ repositories {
 }
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.12.RELEASE'
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-ribbon', version: '1.4.4.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-zuul', version: '1.4.4.RELEASE'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.4.4.RELEASE'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: '1.4.4.RELEASE'
 }
