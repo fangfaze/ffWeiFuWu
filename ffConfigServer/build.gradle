@@ -1,4 +1,4 @@
-group 'com.fangfaze.java.ffweifuwu.ffEurekaClinet'
+group 'com.fangfaze.java.ffweifuwu.ffConfigServer'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -10,7 +10,6 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.12.RELEASE'
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '1.4.3.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-config-server', version: '1.4.3.RELEASE'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: '1.4.4.RELEASE'
 }

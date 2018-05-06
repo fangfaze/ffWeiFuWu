@@ -3,7 +3,14 @@ server:
 
 spring:
   application:
-    name: SERVICE-HELLO
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        serviceId: config-server
 
 eureka:
   enabled: true

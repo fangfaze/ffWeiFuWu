@@ -19,8 +19,11 @@ public class Application {
     @Value("${server.port}")
     Integer port;
 
+    @Value("${foo}")
+    String foo;
+
     @RequestMapping("/hi")
     public String hi(String name) {
-        return "Hello (" + port + "), " + name;
+        return foo + ":Hello (" + port + "), " + name;
     }
 }
