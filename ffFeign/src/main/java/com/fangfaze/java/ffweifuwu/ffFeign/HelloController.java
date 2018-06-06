@@ -16,5 +16,9 @@ public class HelloController {
         return helloService.hiService(name);
     }
 
+    @RequestMapping(value = "/hii")
+    public String hii(@RequestParam String name) {
+        return "hii" + name;
+    }
 
 }

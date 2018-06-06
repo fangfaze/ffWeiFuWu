@@ -6,10 +6,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-@FeignClient(value = "config-client", fallback = HelloServiceFallback.class)
+@FeignClient(value = "server-feign", fallback = HelloServiceFallback.class)
 public interface HelloService {
 
-    @RequestMapping(value = "/hi", method = GET)
+
+    @RequestMapping(value = "/hii", method = GET)
     String hiService(@RequestParam(value = "name") String name);
 
 }

@@ -2,4 +2,4 @@
 
 springboot 构建微服务
 springcloud 微服务治理
-lcn 分布式事务
+tx-lcn 分布式事务
