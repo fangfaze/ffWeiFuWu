@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-@FeignClient(value = "server-feign", fallback = HelloServiceFallback.class)
+@FeignClient(name = "service-feign", url = "http://localhost:8089", fallback = HelloServiceFallback.class)
 public interface HelloService {
 
 

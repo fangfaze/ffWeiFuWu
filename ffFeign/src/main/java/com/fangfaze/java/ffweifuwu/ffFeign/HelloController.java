@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Map;
+
 @RestController
 public class HelloController {
 
@@ -12,7 +17,14 @@ public class HelloController {
     HelloService helloService;
 
     @RequestMapping(value = "/hi")
-    public String hi(@RequestParam String name) {
+    public String hi(HttpServletRequest request, @RequestParam String name) {
+        Enumeration<String> names = request.getHeaderNames();
+
+        while (names.hasMoreElements()) {
+            String headName = names.nextElement();
+            System.out.println(headName + "=" + request.getHeader(headName));
+        }
+
         return helloService.hiService(name);
     }
 
